@@ -1,0 +1,11 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "Light-weight Google translator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tngan",
+  "license": "MIT"
+}
