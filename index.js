@@ -6,5 +6,9 @@ module.exports = function ({q = '', from: sl = 'auto', to: tl = 'en', version: v
   if (lang.indexOf(sl) === -1 || lang.indexOf(tl) === -1) {
     throw new Error('Fatal: undefined source or target language')
   }
-  return token.get(q).then(({name, value: tk}) => fetch(`https://translate.google.com/translate_a/t?tl=${tl}&v=${v}&source=is&tk=${tk}&q=${q}&client=t&sl=${sl}`));
+  return token.get(q)
+    .then(({name, value: tk}) => {
+      const url = `https://translate.google.com/translate_a/t?tl=${tl}&v=${v}&source=is&tk=${tk}&q=${encodeURIComponent(q)}&client=t&sl=${sl}&ie=UTF-8&oe=UTF-8`;
+      return fetch(url);
+    });
 }
