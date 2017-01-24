@@ -42,6 +42,12 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
+franc@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/franc/-/franc-2.0.0.tgz#d9939eded4b486acf4b9f33591fe8e69e5464616"
+  dependencies:
+    trigram-utils "^0.1.0"
+
 get-stream@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"
@@ -97,6 +103,10 @@ is-stream@^1.0.0, is-stream@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
+languagedetect@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/languagedetect/-/languagedetect-1.1.1.tgz#8be363bd24768f92c6e043706f13b3a9294920ab"
+
 lowercase-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
@@ -110,6 +120,10 @@ mkdirp@^0.5.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+n-gram@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/n-gram/-/n-gram-0.1.2.tgz#9acecb0f797fbfd22a0ad8a28d987880a63002ab"
 
 node-fetch@^1.6.3:
   version "1.6.3"
@@ -152,6 +166,12 @@ slide@^1.1.5:
 timed-out@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/timed-out/-/timed-out-4.0.1.tgz#f32eacac5a175bea25d7fab565ab3ed8741ef56f"
+
+trigram-utils@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/trigram-utils/-/trigram-utils-0.1.1.tgz#7df8a092c9897fc2e09dac22f423e283231762e7"
+  dependencies:
+    n-gram "^0.1.0"
 
 unzip-response@^2.0.1:
   version "2.0.1"

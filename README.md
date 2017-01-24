@@ -16,17 +16,19 @@ yarn add translateer --save
 const translator  = require('tranlateer');
 ```
 
-`translator` is a function with only one object argument which is specified below.
+### translate
+
+`translate` is a function with only one object argument which is specified below.
 
 `q` [optional] default is empty, the word/sentence you want to query. <br/>
 `from` [optional] default is auto, used to specify the language of `q`. <br/>
 `to` [optional] default is en, used to specify the language for translation. <br/>
 `version` [optional] default is 1.0, used to specify the version of API. <br/>
 
-### Examples for API v1.0 (Default)
+**Examples for API v1.0 (Default)**
 
 ```javascript
-translator({
+translator.translate({
   q: 'hello world',
   to: 'es'
 })
@@ -36,10 +38,10 @@ translator({
 // Hola Mundo
 ```
 
-### Examples for API v2.0
+**Examples for API v2.0**
 
 ```javascript
-translator({
+translator.translate({
   q: 'hello world',
   to: 'es',
   v: '2.0'
@@ -99,6 +101,24 @@ translator({
   }
 }
 */
+```
+
+### getAudio
+
+`getAudio` is a function returning the url of the audio file
+
+`q` [optional] default is empty, the word/sentence you want to query. <br/>
+`to` [optional] default is auto detected, used to specify the language for translation. <br/>
+`speed` [optional] default is 1, used to specify the audio speed. <br/>
+
+**Example**
+
+```javascript
+translator.getAudio({
+  q: 'hello world'
+})
+.then(console.log);
+// https://translate.google.com/translate_tts?ie=UTF-8&q=test&tl=en&total=1&idx=0&textlen=4&tk=290146.141044&client=t&prev=input&ttsspeed=1 
 ```
 
 ### Copyright
